@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario{
+    background-image: url(../images/Design.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.duvidas{
+    color: #FFFFFF;
+    padding: 11vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.duvidas h1{
+    font-weight: 900;
+    font-size: 25px;
+    
+}
+
+.duvidas p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 15px ;
+}
+
+.campos{
+    background-color: #fff;
+    margin: 10px 12vh 10px 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campos p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.campo input{
+    color: #A8A8A8;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+    height: 10vh;
+}
+
+ .mensagem input{
+    height: 25vh;
+}
+
+.botao-enviar{
+    background-color: #3CCC87;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.botao-enviar h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.campo-preenchido input{
+    border-color: #00C22B;
+    color: #000000;
+}
+
+.campo-errado input{
+    border-color: #F52E2E;
+}
+
+.campo-errado::after{
+    content: "campo obrigatório";
+    color: #F52E2E;
+    font-size: 10px;
+}
